@@ -2,19 +2,56 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Code Keeper</title>
+    <title>Christopher Pemberton</title>
+    <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    <header class="container alert alert-dark pull-left" role="alert">
-        <img th:src="@{/images/Handshake.jpg}" />
-        <h1 class="font-weight-bold"><span class="square">C</span>ode Keeper</h1>
+    <header class="container alert alert-dark justify-content-center" role="alert">
+        <img class="profile mx-auto d-block" th:src="@{/images/profile.jpg}"/>
+        <div class="justify-content-center">
+            <h1 class="font-weight-bold"><div class="square">C</div>hristopher Pemberton</h1>
+        </div>
     </header>
+    <hr/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#workHistory" role="button" aria-expanded="false" aria-controls="collapseExample">Work History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#technologies" role="button" aria-expanded="false" aria-controls="collapseExample">Technologies</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="collapse" id="workHistory">
+        <div class="card card-body">
+            <h2><strong>Mckesson IT</strong></h2><h3><strong>8/2016 to Present</strong></h3>
+        </div>
+    </div>
+    <div class="collapse" id="technologies">
+        <div class="card card-body">
+            <h2><strong>Spring Boot</strong></h2><h3><strong>8/2016 to Present</strong></h3>
+        </div>
+    </div>
     <p class="containter col-xs-6">
         Welcome to my website. A constant work in progress, like myself. I will be updating this regularly.
         Probably adding a news feed and links to my <a href="https://github.com/valor4valkyrie" target="#">Github</a> profile.
     </p>
     <div id="like_button_container"></div>
 </body>
-<script type = "text/javascript" src = "./js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type = "text/javascript" src = "/js/index.js"></script>
 </html>

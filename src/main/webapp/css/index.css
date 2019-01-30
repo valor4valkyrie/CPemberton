@@ -1,10 +1,20 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
+    padding: 50px;
 }
 
 ol, ul {
     padding-left: 30px;
+}
+
+#header{
+    padding: 15px;
+}
+
+#hr{
+    height: 5px;
 }
 
 .board-row:after {
@@ -19,17 +29,17 @@ ol, ul {
 
 .square {
     background: #fff;
-    border: 1px solid #999;
+    border: 3px solid #000000;
     float: left;
-    font-size: 24px;
+    font-size: 48px;
     font-weight: bold;
     line-height: 34px;
-    height: 34px;
+    height: 50px;
     margin-right: -1px;
     margin-top: -1px;
-    padding: 0;
+    padding: 5px;
     text-align: center;
-    width: 34px;
+    width: 50px;
 }
 
 .square:focus {
@@ -47,4 +57,10 @@ ol, ul {
 
 .game-info {
     margin-left: 20px;
+}
+
+.profile {
+    border-color: #999999;
+    border-width: 5px;
+    border-radius: 50%;
 }
