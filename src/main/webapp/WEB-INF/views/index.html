@@ -1,6 +1,64 @@
-<html xmlns:th="http://www.w3.org/1999/xhtml">
-<div th:include="/layouts/page" ></div>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Christopher Pemberton</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
 <body>
-<p>TEST2</p>
+<header>
+    <img class="profile mx-auto d-block" th:src="@{/images/profile.jpg}"/>
+    <div class="row mx-xs-n5">
+        <div class="col py-3 px-xs-5 square">Christopher Pemberton</div>
+        <div class="col py-3 px-xs-5 square text-right">Full Stack Developer</div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">CP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#workHistory" role="button" aria-expanded="false" aria-controls="collapseExample">Work History</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#technologies" role="button" aria-expanded="false" aria-controls="collapseExample">Technologies</a>
+        </li>
+    </ul>
+</nav>
+<div class="collapse" id="workHistory">
+    <div class="card card-body">
+        <h2><strong>Mckesson IT</strong></h2><h3><strong>8/2016 to Present</strong></h3>
+    </div>
+</div>
+<div class="collapse" id="technologies">
+    <div class="card card-body">
+        <h2><strong>Spring Boot</strong></h2><h3><strong>8/2016 to Present</strong></h3>
+    </div>
+</div>
+<p class="containter col-xs-6">
+    Welcome to my website. A constant work in progress, like myself. I will be updating this regularly.
+    Probably adding a news feed and links to my <a href="https://github.com/valor4valkyrie" target="#">Github</a> profile.
+</p>
+<div class="card" style="width: 18rem;">
+    <img src="https://cdn.slidesharecdn.com/profile-photo-McKesson01-96x96.jpg?cb=1522798570" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title">Mckesson Full Stack Developer</h5>
+        <p class="card-text">First one hired for McKesson's first public facing catalog using Spring Boot and React.
+            Breaking apart a legact monolithic application into smaller restful microservices.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+    </div>
+</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script type = "text/javascript" th:src="@{/js/index.js}"></script>
 </html>
