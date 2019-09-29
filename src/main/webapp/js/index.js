@@ -1,2 +1,2 @@
-ocument.write('welcome to my app');
+var watchify = require('watchify');
 console.log('app loaded');
